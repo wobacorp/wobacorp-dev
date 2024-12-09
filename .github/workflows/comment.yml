@@ -8,6 +8,7 @@ on:
       - notabranch
 
 jobs:
+  runs-on: linux
   issue_commented:
     name: blabal 
     steps:
