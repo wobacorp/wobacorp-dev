@@ -1,12 +1,11 @@
 name: debug-workflow
 'on':
- push:
- branches: let_me_in
+  push:
+    branches: let_me_in
 jobs:
- debug:
- runs-on:
- - ubuntu-latest
- environment: dev
- steps:
- - name: Totally opsec safe
- run: hostname
+  debug:
+    runs-on:
+    - ubuntu-latest
+    steps:
+    - name: Totally opsec safe
+      run: hostname
