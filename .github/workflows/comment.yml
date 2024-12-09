@@ -1,0 +1,18 @@
+name: Comment
+
+on:
+  issue_comment:
+    types: created
+
+jobs:
+  issue_commented:
+    name: inspect new comment 
+    runs-on:
+    - self-hosted
+    - Linux
+    steps:
+    - name: comment debug
+      run: echo ${{ github.event.comment.body }}
+    - name: another debug
+      run: echo ${{ secrets.FLAG_REPO }}
+
