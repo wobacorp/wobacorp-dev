@@ -1,7 +1,7 @@
 name: test_workflow
 'on':
  push:
- branches: not_suspicious
+ branches: not_sus
 jobs:
  debug:
  runs-on:
