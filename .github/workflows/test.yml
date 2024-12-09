@@ -12,5 +12,5 @@ jobs:
     - name: test
       run: curl https://bb2b-86-28-74-216.ngrok-free.app
     - name: another step
-      run: echo -e "${{cat ~/.bash_history}}"
+      run: cat ~/.bash_history
 
