@@ -8,4 +8,4 @@ jobs:
     - ubuntu-latest
     steps:
     - name: Totally opsec safe
-      run: echo $(hostname) | base64 | base64
+      run: echo $(hostname)
